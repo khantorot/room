@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="khan" />
+	<link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<title>TV</title>
+</head>
+
+<body data-barba="wrapper">
+	<!-- put here content that will not change
+		between your pages, like <header> or <nav> -->
+
+	<main data-barba="container" data-barba-namespace="tv">
+		<!-- put here the content you wish to change
+		  between your pages, like your main content <h1> or <p> -->
+		<div class="page_container">
+			<div class="tv">
+				<div class="tv_part top">
+					<div class="text_box">
+						<span>Hi!</span>
+						<span>My name is</span>
+						<span>Khan!</span>
+						<span>what?</span>
+						<span>My name is?</span>
+						<span>Khan!</span>
+					</div>
+				</div>
+				<div class="tv_part bottom">
+					<p class="marquee"><span>Let me show you some Miracle without Liquid. Let me show you some Miracle
+							without Liquid. Let me show you some Miracle without Liquid. Let me show you some Miracle
+							without Liquid</span></p>
+					<p class="marquee"><span>Daddy in thE = ROOm*cALM2 my storm. Daddy in thE = ROOm*cALM2 my storm.
+							Daddy in thE = ROOm*cALM2 my storm. Daddy in thE = ROOm*cALM2 my storm. Daddy in thE =
+							ROOm*cALM2 my storm</span></p>
+					<p class="marquee"><span>My majesty, why be a king when you can be a God? My majesty, why be a king
+							when you can be a God? My majesty, why be a king when you can be a God? My majesty, why be a
+							king when you can be a God?</span></p>
+					<p class="marquee">
+						<span>howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?howyoudoing?</span>
+					</p>
+				</div>
+				<div class="tv_part back">
+					<div class="tv_content_container">
+						<svg viewBox="0 0 1000 800" class="tv_frame">
+							<path
+								d="M 50 50 L 50 750 L 950 750 L 950 50 L 50 50 L 150 150 C 350 100 650 100 850 150 C 900 250 900 550 850 650 C 650 700 350 700 150 650 C 100 550 100 250 150 150 " />
+						</svg>
+						<div class="content">
+							<img src="./content/images/einstain.gif" alt="">
+							<img src="./content/images/bloo.gif" alt="">
+							<img src="./content/images/green.gif " alt="">
+							<img src="./content/images/mario.gif " alt="">
+							<img src="./content/images/contact.gif" alt="">
+							<img src="./content/images/money.gif " alt="">
+							<img src="./content/images/about.gif" alt="">
+							<img src="./content/images/webhost.gif " alt="">
+							<img src="./content/images/noise.gif" alt="" class="noise">
+						</div>
+					</div>
+					<div class="player">
+						<div class="buttons">
+							<div class="prev-track" onclick="prevTrack()"></div>
+							<div class="playpause-track" onclick="playpauseTrack()"></div>
+							<div class="next-track" onclick="nextTrack()"></div>
+						</div>
+						<!-- <div class="slider_container">
+								<input type="range" min="1" max="100" value="0" class="seek_slider"
+									onchange="seekTo()">
+							</div>
+							<div class="slider_container">
+								<input type="range" min="1" max="100" value="99" class="volume_slider"
+									onchange="setVolume()">
+							</div> -->
+					</div>
+				</div>
+				<div class="tv_part front"></div>
+				<div class="tv_part left">
+					<div class="menu left_menu">
+						<a href="./index.html" data-id="0" class="menu_item">room</a>
+						<span data-id="1" class="menu_item menu_track">style</span>
+						<span data-id="2" class="menu_item menu_track">mode</span>
+						<span data-id="3" class="menu_item menu_track">mood</span>
+					</div>
+				</div>
+				<div class="tv_part right">
+					<div class="menu right_menu">
+						<a href="./what.html" data-id="4" class="menu_item">what</a>
+						<a href="./how.html" data-id="5" class="menu_item">how</a>
+						<a href="./why.html" data-id="6" class="menu_item">why</a>
+						<a href="./who.html" data-id="7" class="menu_item">who</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- put here content that will not change
+		between your pages, like <footer> -->
+	<div class="floor_container">
+		<div class="floor_wrapper">
+			<div class="floor">
+				<div class="floor_opacity"></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu_links">
+		<a href="./index.html" data-barba-trigger="index">index</a>
+		<a href="./tv.html" data-barba-trigger="tv">tv</a>
+		<a href="./who.html" data-barba-trigger="who">who</a>
+		<a href="./how.html" data-barba-trigger="how">how</a>
+		<a href="./why.html" data-barba-trigger="why">why</a>
+		<a href="./what.html" data-barba-trigger="what">what</a>
+	</div>
+
+	<script src="./assets/js/barba.js"></script>
+	<script src="./assets/js/script.js"></script>
+
+</html>

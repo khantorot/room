@@ -1,0 +1,463 @@
+body{
+    background: --bg;
+    overflow: hidden;
+}
+
+.page_container{
+    position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+    perspective: 1500px;
+	background: inherit;
+    overflow: hidden;
+}
+
+.room {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform ease-out 0.3s;
+    transform: translateZ(-60vw);
+}
+
+.box{
+    width: 20vw;
+    height: 12vw;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.box_part{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 8px solid var(--index);
+    background: var(--link);
+    transition: filter ease 0.4s;
+    transition: border 0.2s;
+    overflow: hidden;
+}
+
+.box .back {
+    transform: translateZ(-10vw);
+}
+
+.box .top {
+    transform: rotateX(270deg);
+    transform-origin: top;
+    height: 10vw;
+}
+
+.box .left {
+    transform: rotateY(90deg);
+    transform-origin: left;
+    width: 10vw;
+}
+
+.box .right {
+    transform: rotateY(-90deg);
+    right: 0;
+    transform-origin: right;
+    width: 10vw;
+}
+
+.box .front{
+    height: 100%;
+    width: 100%;
+}
+
+.tv_box .front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+}
+
+
+.tv_box .front img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.tv_box .front::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1vw solid var(--bg);
+    
+}
+
+.box .bottom {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    bottom: 0;
+    height: 10vw;
+}
+
+
+.box1{
+    right: calc(50% + 17vw);
+}
+.box1 .top{
+    transform: rotateX(270deg) rotateZ(-20deg);
+    transform-origin: top right;
+}
+.box1 .front{
+    transform: rotateY(-20deg) translateZ(-1px);
+    transform-origin: right;
+}
+.box1 .bottom{
+    transform: rotateX(90deg) rotateZ(20deg);
+    transform-origin: bottom right;
+}
+.box1 .back{
+    transform: rotateY(-20deg) translateZ(-10vw);
+    transform-origin: right;
+}
+.box1 .left{
+    transform: rotateY(70deg) translateX(68%) translateZ(-1.2vw);
+}
+.box1 .right{
+    transform: rotateY(-110deg);
+}
+
+.box2{
+    left: calc(50% - 10vw);
+}
+
+
+.box3{
+    left: calc(50% + 17vw);
+}
+.box3 .top{
+    transform: rotateX(270deg) rotateZ(20deg);
+    transform-origin: top left;
+}
+.box3 .front{
+    transform: rotateY(20deg) translateZ(-1px);
+    transform-origin: left;
+}
+.box3 .bottom{
+    transform: rotateX(90deg) rotateZ(-20deg);
+    transform-origin: bottom left;
+}
+.box3 .back{
+    transform: rotateY(20deg) translateZ(-10vw);
+    transform-origin: left;
+}
+.box3 .left{
+    transform: rotateY(110deg);
+}
+.box3 .right{
+    transform: rotateY(-70deg) translateX(-68%) translateZ(-1.2vw);
+}
+
+.box4{
+    bottom: 12vw;
+    right: calc(50% + 4vw);
+}
+.box4 .top{
+    transform: rotateX(270deg) rotateZ(-10deg);
+}
+.box4 .front{
+    transform: rotateY(-10deg);
+}
+.box4 .bottom{
+    transform: rotateX(90deg) rotateZ(10deg);
+}
+.box4 .back{
+    transform: rotateY(-10deg) translateZ(-10vw);
+}
+.box4 .left{
+    transform: rotateY(80deg) translateX(17%);
+}
+.box4 .right{
+    transform: rotateY(-100deg) translateX(17%);
+}
+
+.box5{
+    bottom: 12vw;
+    left: calc(50% + 4vw);
+}
+.box5 .top{
+    transform: rotateX(270deg) rotateZ(10deg);
+}
+.box5 .front{
+    transform: rotateY(10deg);
+}
+.box5 .bottom{
+    transform: rotateX(90deg) rotateZ(-10deg);
+}
+.box5 .back{
+    transform: rotateY(10deg) translateZ(-10vw);
+}
+.box5 .left{
+    transform: rotateY(100deg) translateX(-17%);
+}
+.box5 .right{
+    transform: rotateY(-80deg) translateX(-17%);
+}
+
+.box6{
+    height: 15vw;
+    width: 20vw;
+    left: calc(50% - 10vw);
+    bottom: 24vw;
+}
+
+.box7{
+    bottom: 0;
+    left: 96vw;
+    width: 36vw;
+    height: 16vw;
+}
+
+.box7 .front::after,
+.box7 .front::before{
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8vw;
+    height: 8vw;
+    background: #30061c;
+    border-color: inherit;
+    border-width: 1vw;
+    border-style: dashed;
+    border-radius: 100%;
+}
+
+.box7 .front::before{
+    left: auto;
+    right: 5%;
+}
+
+.box7 .top{
+    transform: rotateX(270deg) rotateZ(-30deg) translateY(-10vw);
+    transform-origin: top left;
+}
+.box7 .front{
+    transform: rotateY(-30deg) translateZ(10vw);
+    transform-origin: left;
+}
+.box7 .bottom{
+    transform: rotateX(90deg) rotateZ(30deg) translateY(10vw);
+    transform-origin: bottom left;
+}
+.box7 .back{
+    transform: rotateY(-30deg);
+    transform-origin: left;
+}
+.box7 .left{
+    transform: rotateY(60deg) translateX(-10vw);
+}
+.box7 .right{
+    transform: rotateY(60deg) translateX(-18vw) translateZ(4.6vw);
+}
+
+
+.box8{
+    bottom: 0;
+    right: 90vw;
+    height: 3vw;
+    width: 15vw;
+}
+
+.box8 .top{
+    height: 15vw;
+    transform: rotateX(270deg) translateY(-30vw);
+}
+.box8 .front{
+    transform: translateZ(30vw);
+}
+.box8 .bottom{
+    height: 15vw;
+    transform: rotateX(90deg) translateY(30vw);
+}
+.box8 .back{
+    transform: translateZ(15vw);
+}
+.box8 .left{
+    width: 15vw;
+    transform: rotateY(90deg) translateX(-30vw);
+}
+.box8 .right{
+    width: 15vw;
+    transform: rotateY(-90deg) translateX(30vw);
+}
+
+
+.box9{
+    bottom: 0;
+    left: calc(50% - 5vw);
+    height: 1vw;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.box9 .box_part{
+    transition: ease-out 0.3s;
+    background: var(--index1);
+    border-color: var(--index)!important;
+}
+
+.box9:hover .box_part{
+    background: var(--index);
+    border-color: var(--index1)!important;
+}
+
+
+.box9 .top{
+    height: 5vw;
+    transform: rotateX(270deg) translateY(-60vw);
+}
+.box9 .front{
+    transform: translateZ(60vw);
+}
+.box9 .bottom{
+    height: 5vw;
+    transform: rotateX(90deg) translateY(60vw);
+}
+.box9 .back{
+    transform: translateZ(55vw);
+}
+.box9 .left{
+    width: 5vw;
+    transform: rotateY(90deg) translateX(-60vw);
+}
+.box9 .right{
+    width: 5vw;
+    transform: rotateY(-90deg) translateX(60vw);
+}
+
+
+.box10{
+    bottom: 3vw;
+    right: 98vw;
+    height: 4vw;
+    width: 1vw;
+}
+
+.box10 .box_part{
+    background: var(--index1);
+    border-color: var(--index)!important;
+    cursor: pointer;
+}
+
+.box10:hover .box_part{
+    background: var(--index);
+    border-color: var(--index1)!important;
+}
+
+.box10 .top{
+    transform: rotateX(270deg) translateY(-28vw);
+}
+.box10 .front{
+    transform: translateZ(28vw);
+}
+.box10 .bottom{
+    transform: rotateX(90deg) translateY(28vw);
+}
+.box10 .back{
+    transform: translateZ(18vw);
+}
+.box10 .left{
+    transform: rotateY(90deg) translateX(-28vw);
+}
+.box10 .right{
+    transform: rotateY(-90deg) translateX(28vw);
+}
+
+.dendy_cord{
+    width: 60vw;
+    height: 60vw;
+    position: absolute;
+    bottom: 1px;
+    right: 30%;
+    transform: rotateX(-90deg) translateY(5vw);
+    transform-origin: bottom right;
+}
+.dendy_cord svg {
+    width: 100%;
+    height: 100%;
+}
+
+.dendy_cord svg polyline,
+.dendy_cord svg line,
+.dendy_cord svg path {
+    fill: none;
+    stroke: var(--line);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+
+
+
+
+
+
+
+.box11{
+    bottom: 16vw;
+    left: 96vw;
+    width: 36vw;
+    height: 5vw;
+}
+
+.box11 .box_part{
+    background: transparent;
+}
+
+.box11 .top{
+    height: 4vw;
+    transform: rotateX(270deg) rotateZ(-30deg) translateY(-7vw);
+    transform-origin: top left;
+    background: var(--link);
+}
+.box11 .front{
+    transform: rotateY(-30deg) translateZ(7vw);
+    transform-origin: left;
+    border-width: 1.5vw;
+}
+
+
+
+.box11 .bottom{
+    height: 4vw;
+    transform: rotateX(90deg) rotateZ(30deg) translateY(7vw);
+    transform-origin: bottom left;
+}
+.box11 .back{
+    transform: rotateY(-30deg) translateZ(3vw);
+    transform-origin: left;
+    border-width: 1.5vw;
+}
+.box11 .left{
+    width: 4vw;
+    transform: rotateY(60deg) translateX(-7vw);
+    background: var(--link);
+}
+.box11 .right{
+    width: 4vw;
+    transform: rotateY(60deg) translateX(-21vw) translateZ(4.6vw);
+    background: var(--link);
+}
+
+
+/* .tv_box:hover .box_part{
+    transition: filter ease-out 0.3s;
+    filter: grayscale(1);
+} */
+

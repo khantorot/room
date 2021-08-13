@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="khan" />
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>how</title>
+</head>
+
+<body data-barba="wrapper">
+    <!-- put here content that will not change
+		between your pages, like <header> or <nav> -->
+    <main data-barba="container" data-barba-namespace="how">
+        <!-- put here the content you wish to change
+		  between your pages, like your main content <h1> or <p> -->
+        <div class="page_container">
+            <div class="page_img"></div>
+            <div class="noise"></div>
+            <div class="content">
+                <div class="content_data">
+                    <h2>how ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deleniti tempore natus sed
+                        incidunt porro ad alias dolore reprehenderit adipisci, rerum vitae dolorem iusto blanditiis
+                        tenetur architecto officiis voluptates molestias.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quis voluptas asperiores
+                        possimus et assumenda dolor. Cupiditate adipisci, eligendi harum vitae, dolorum alias eaque,
+                        est consequuntur distinctio laborum quisquam consectetur?</p>
+                    <div class="menu">
+                        <a href="./index.html" data-barba-trigger="index">index</a>
+                        <a href="./tv.html" data-barba-trigger="tv">tv</a>
+                        <a href="./who.html" data-barba-trigger="who">who</a>
+                        <a href="./how.html" data-barba-trigger="how">how</a>
+                        <a href="./why.html" data-barba-trigger="why">why</a>
+                        <a href="./what.html" data-barba-trigger="what">what</a>
+                    </div>
+                    <div class="player">
+                        <div class="buttons">
+                            <div class="prev-track" onclick="prevTrack()"></div>
+                            <div class="playpause-track" onclick="playpauseTrack()"></div>
+                            <div class="next-track" onclick="nextTrack()"></div>
+                        </div>
+                        <!-- <div class="slider_container">
+                            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                        </div> -->
+                        <div class="slider_container">
+                            <input type="range" min="1" max="100" value="100" class="volume_slider" onchange="setVolume()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- put here content that will not change
+		between your pages, like <footer> -->
+    <div class="floor_container">
+        <div class="floor_wrapper">
+            <div class="floor">
+                <div class="floor_opacity"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_links">
+        <a href="./index.html" data-barba-trigger="index">index</a>
+        <a href="./tv.html" data-barba-trigger="tv">tv</a>
+        <a href="./who.html" data-barba-trigger="who">who</a>
+        <a href="./how.html" data-barba-trigger="how">how</a>
+        <a href="./why.html" data-barba-trigger="why">why</a>
+        <a href="./what.html" data-barba-trigger="what">what</a>
+    </div>
+    <script src="./assets/js/barba.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</html>

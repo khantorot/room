@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="khan" />
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>room</title>
+</head>
+
+<body data-barba="wrapper">
+    <!-- put here content that will not change
+		between your pages, like <header> or <nav> -->
+    <main data-barba="container" data-barba-namespace="index">
+        <!-- put here the content you wish to change
+		  between your pages, like your main content <h1> or <p> -->
+        <div class="page_container">
+            <div class="room">
+                <a href="./why.html" data-barba-trigger="why">
+                    <div class="box box1 tv_box">
+                        <div class="box_part top"></div>
+                        <div class="box_part bottom"></div>
+                        <div class="box_part back"></div>
+                        <div class="box_part front">
+                            <img src="./content/images/about.gif" alt="">
+                        </div>
+                        <div class="box_part left"></div>
+                        <div class="box_part right"></div>
+                    </div>
+                </a>
+                <div class="box box2 tv_box">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front">
+                        <canvas></canvas>
+                    </div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <a href="./who.html" data-barba-trigger="who">
+                    <div class="box box3 tv_box">
+                        <div class="box_part top"></div>
+                        <div class="box_part bottom"></div>
+                        <div class="box_part back"></div>
+                        <div class="box_part front">
+                            <img src="./content/images/noise.gif" alt="">
+                        </div>
+                        <div class="box_part left"></div>
+                        <div class="box_part right"></div>
+                    </div>
+                </a>
+                <a href="./what.html" data-barba-trigger="what">
+                    <div class="box box4 tv_box">
+                        <div class="box_part top"></div>
+                        <div class="box_part bottom"></div>
+                        <div class="box_part back"></div>
+                        <div class="box_part front">
+                            <img src="./content/images/contact.gif" alt="">
+                        </div>
+                        <div class="box_part left"></div>
+                        <div class="box_part right"></div>
+                    </div>
+                </a>
+                <a href="./how.html" data-barba-trigger="how">
+                    <div class="box box5 tv_box">
+                        <div class="box_part top"></div>
+                        <div class="box_part bottom"></div>
+                        <div class="box_part back"></div>
+                        <div class="box_part front">
+                            <img src="./content/images/834353f410058c3f7ae2f80fd8f4a26c.gif" alt="">
+                        </div>
+                        <div class="box_part left"></div>
+                        <div class="box_part right"></div>
+                    </div>
+                </a>
+                <a href="./tv.html" data-barba-trigger="tv">
+                    <div class="box box6 tv_box">
+                        <div class="box_part top"></div>
+                        <div class="box_part bottom"></div>
+                        <div class="box_part back"></div>
+                        <div class="box_part front">
+                            <img src="./content/images/einstain.gif" alt="">
+                        </div>
+                        <div class="box_part left"></div>
+                        <div class="box_part right"></div>
+                    </div>
+                </a>
+                <div class="box box7">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front">
+                        <div class="player">
+                            <div class="buttons">
+                                <div class="prev-track" onclick="prevTrack()"></div>
+                                <div class="playpause-track" onclick="playpauseTrack()"></div>
+                                <div class="next-track" onclick="nextTrack()"></div>
+                            </div>
+                            <!-- <div class="slider_container">
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                            </div> -->
+                            <div class="slider_container">
+                                <input type="range" min="1" max="100" value="100" class="volume_slider"
+                                    onchange="setVolume()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <div class="box box8">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front"></div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <div class="box box9">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front"></div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <div class="box box10">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front"></div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <div class="box box11">
+                    <div class="box_part top"></div>
+                    <div class="box_part bottom"></div>
+                    <div class="box_part back"></div>
+                    <div class="box_part front"></div>
+                    <div class="box_part left"></div>
+                    <div class="box_part right"></div>
+                </div>
+                <div class="dendy_cord">
+                    <svg viewBox="0 0 800 800" class="cord">
+                        <path
+                            d="M 520 0 C 650 150 550 100 450 200 C 350 350 600 250 650 350 C 800 600 650 700 600 600 C 550 450 450 350 400 500 C 350 700 150 650 0 450 " />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="floor_container">
+        <div class="floor_wrapper">
+            <div class="floor">
+                <div class="floor_opacity"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_links">
+        <a href="./index.html" data-barba-trigger="index">index</a>
+        <a href="./tv.html" data-barba-trigger="tv">tv</a>
+        <a href="./who.html" data-barba-trigger="who">who</a>
+        <a href="./how.html" data-barba-trigger="how">how</a>
+        <a href="./why.html" data-barba-trigger="why">why</a>
+        <a href="./what.html" data-barba-trigger="what">what</a>
+    </div>
+
+    <script src="./assets/js/barba.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</html>
