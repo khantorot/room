@@ -86,7 +86,7 @@ function showTv() {
 		easing: "ease-in"
 	})
 
-	floor_el.style.background = 'url(../content/images/noise.gif)';
+	floor_el.style.background = 'url(./content/images/noise.gif)';
 	floor_el.style.opacity = 0.2;
 }
 
