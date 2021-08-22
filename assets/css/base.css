@@ -99,7 +99,7 @@ textarea, button, input{
     height: 400%;
     transform: rotateX(-90deg) translateY(50%);
     transform-origin: bottom;
-    background: url(../../content/images/floor.png);
+    background: url(../../room/content/images/floor.png);
     /* border: 50px solid red; */
     transition: opacity 0.5s;
 }
