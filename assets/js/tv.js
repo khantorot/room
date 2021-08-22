@@ -21,7 +21,7 @@
 	}
 
 	function showNoise() {
-		floor_el.style.background = 'url(../content/images/noise.gif)';
+		floor_el.style.background = 'url(./content/images/noise.gif)';
 		noise.style.opacity = 1;
 	}
 
@@ -44,7 +44,7 @@
 			let id = e.target.getAttribute('data-id');
 
 			noise.style.opacity = 1;
-			floor_el.style.background = 'url(../content/images/noise.gif)';
+			floor_el.style.background = 'url(./content/images/noise.gif)';
 			setTimeout(function () {
 				content.forEach(element => {
 					element.style.opacity = 0;
