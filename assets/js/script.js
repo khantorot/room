@@ -129,7 +129,7 @@ function showIndex() {
 		duration: 5000,
 		easing: "ease-in"
 	})
-	floor_el.style.background = 'url(../content/images/floor.png)';
+	floor_el.style.background = 'url(./content/images/floor.png)';
 	floor_el.style.opacity = 1;
 
 }
@@ -243,7 +243,7 @@ function showWho() {
 		duration: 5000,
 		// easing: "ease-out"
 	})
-	floor_el.style.background = 'url(../content/images/floor.png)';
+	floor_el.style.background = 'url(./content/images/floor.png)';
 	floor_el.style.opacity = 1;
 }
 
