@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>экран</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-barba="wrapper">
+
+    <main data-barba="container" data-barba-namespace="tv">
+        <div class="room_container">
+            <div class="room">
+                <div class="tv_tv">
+                    <div class="tv_tv_part left">
+                        <ul class="menu menu_left">
+                            <span data-id="1" class="menu_item menu_track">Сестры</span>
+                            <span data-id="2" class="menu_item menu_track">Брат</span>
+                            <span data-id="3" class="menu_item menu_track">Городок</span>
+                            <span data-id="4" class="menu_item menu_track">Малыши</span>
+                        </ul>
+                    </div>
+                    <div class="tv_tv_part right">
+                        <div class="menu menu_right">
+                            <a href="./who.html" data-id="5" class="menu_item menu_link">кто</a>
+                            <a href="./what.html" data-id="6" class="menu_item menu_link">что</a>
+                            <a href="./how.html" data-id="7" class="menu_item menu_link">как</a>
+                            <a href="./why.html" data-id="8" class="menu_item menu_link">зачем</a>
+                        </div>
+                    </div>
+                    <div class="tv_tv_part front">
+                        <div class="menu menu_center">
+                            <a href="./index.html" data-id="0" class="menu_item menu_link" data-barba-trigger="index">эфир</a>
+                        </div>
+                    </div>
+                    <div class="tv_tv_part bottom"></div>
+                    <div class="tv_tv_part back">
+                        <div class="tv_content_container">
+                            <svg viewBox="0 0 1000 800" class="tv_frame">
+                                <path
+                                    d="M 50 50 L 50 750 L 950 750 L 950 50 L 50 50 L 150 150 C 350 100 650 100 850 150 C 900 250 900 550 850 650 C 650 700 350 700 150 650 C 100 550 100 250 150 150 " />
+                            </svg>
+                            <div class="content">
+                                <img src="./content/images/noise.gif" alt="tv">
+                                <img src="./content/images/style0.gif" alt="style0">
+                                <img src="./content/images/style1.gif" alt="style1">
+                                <img src="./content/images/style2.gif " alt="style2">
+                                <img src="./content/images/style3.gif " alt="style3">
+                                <img src="./content/images/who.gif " alt="who">
+                                <img src="./content/images/what.gif" alt="what">
+                                <img src="./content/images/how.gif " alt="how">
+                                <img src="./content/images/why.gif" alt="why">
+                                <img src="./content/images/noise.gif" alt="" class="noise">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor">
+                    <div class="floor_opacity"></div>
+                    <div class="floor_content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="mob">only desktop version available</div>
+
+    <script src="./assets/js/barba.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
